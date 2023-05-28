@@ -8,7 +8,7 @@ int count=ap.count_ofdigit(1634);
 System.out.println(count);
 int result=ap.find_arms(num,count);
 System.out.println(result);
-//ap.power(num,count);
+ap.power(num,count);
 if(num==result)
 {
 System.out.println("Armstrong number");
@@ -32,13 +32,13 @@ num=num/10;
 return count;
 }
 
-int power(int base,int power)//4,4
+int power(int base,int power)//4,4 count=power
 {
 int box=1;
 while(power>0)
 {
-box=box*base;
-power=power-1;
+box=box*base; //1*4,4*4,16*4,64*4
+power=power-1; //totally 4 digits so each number will be multiplied for 4 times.
 }
 return box;//256//81
 }
@@ -50,7 +50,7 @@ int sum=0;
 while(num>0)
 {
 int rem=num%10;//1634 4 is remaing 
-sum=sum+power(rem,count); //4,4 //256//3,4//81 //6,4//1296//1,4//1
+sum=sum+power(rem,count);  //256+81+1296+1 = 1634
 num=num/10;
 }
 return sum;

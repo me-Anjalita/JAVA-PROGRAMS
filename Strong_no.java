@@ -4,8 +4,7 @@ public static void main(String[] args)
 {
 Strong_no sn = new Strong_no();
 int num=145;
-sn.factorial();
-int result=sn.find_strong_no(num);
+int result=sn.find_strong_no(num); // here num we have alloted,so below we should assign an other variable not the same one
 System.out.println("The result of finding strong no is" + result);
 if(num==result)
 {
@@ -17,30 +16,31 @@ else
 }
 }
 
-int find_strong_no()
+int find_strong_no(int no)
 {
-sum=0;
+int sum=0;
 while(no>0)
 {
-int no3=num%10;
-sum=sum+factorial(no3);
-num=num/10;
+int rem=no%10; //5
+sum=sum+factorial(rem);  //0+factorial(1*2*3*4*5)
+no=no/10; //14
 }
 return sum;
 }
 
-int factorial(int no3)
+int factorial(int fact) //5 then //4 then //1 factorial
 {
-int fact=1;
+int box=1;
 int number=1;
-while(number<no3)
+while(number<=fact)
 {
-fact=fact*no3;
+box=box*number;  //1*1,1*2,2*3,6*4,24*5,120
 number=number+1;
 }
-return fact;
+return box;
 }
 
 }
+
 
 

@@ -9,7 +9,7 @@ lp.find_prime(131);
 }
 //void find_divisors(int no)
 //void find_count_of_divisors(int no)
-void find_prime(int no) // no is 131
+public void find_prime(int no) // no is 131
 {
 int div = 2; 
 int count= 0;

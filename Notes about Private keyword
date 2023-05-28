@@ -1,0 +1,30 @@
+The keyword private :
+ It is an access modifier .
+ 
+ If a variable or method is declared as private,we cannot access them from other classes.
+
+ we can access private variables and methods within the same class.
+
+Import: If we include any class reference to our class from other packages,we should add 'import' statement. Import statement should be present after package statement and before class statement.
+
+import= java,python
+using= c#
+include= c
+
+Package-private: 
+It is an access modifier - It is the default access modifier. 
+ 
+ If a variable or method is declared as private,we cannot access them from other classes.
+
+ we can access private variables and methods within the same class.
+
+ENCAPSULATION : 
+Bundling data and methods together in a class.
+
+
+
+
+
+
+
+

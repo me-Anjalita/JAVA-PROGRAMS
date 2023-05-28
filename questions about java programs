@@ -1,0 +1,40 @@
+Test Questions
+1) What is class : class is a template,blueprint or know as a logical entity from which objects are created.and the class name should be meaningful and should not have special characters. Class name should not start with numbers but can end with numbers,class name should follow a camal case.
+SYNTAX- class <Class_name>
+
+2) What is Object : Its a real time entity/physical entity that has state and behaviour. Object is instance of a class and is the memory reference of the class and has dynamic size.Eg:car,bar.
+
+
+3) How do you create object ? : SYNTAX - ClassName object = new ClassName(); At first we should write the class name and an object name should be assigned to it is also called as a referrence variable . We must declare the keyword new.When we create an instance of the class by using the new keyword, it allocates memory (heap) for the newly created object and also returns the reference of that object to that memory. The new keyword is also used to create an array.
+we must declare the constructor after the keyword new. 
+
+
+4) What is method? : A method in Java is a block of code that when called, performs specific actions mentioned in it. 
+SYNTAX- modifiers return-type method-name(parameter-list)
+{
+    Method body
+}
+ADVANTAGES: code reusability,code optimization.
+
+
+5) What is the use of void? : Void is a Java keyword. Used at method declaration and definition that allow us to create methods which donot return a value.
+
+6) What is return datatype?: Return data type specifies the type of value that the method should return.
+. In Java, every method is declared with a return type such as int, float, double, string, etc.
+
+. These return types required a return statement at the end of the method. A return keyword is used for returning the resulted value.
+
+. The void return type doesn't require any return statement. If we try to return a value from a void method, the compiler shows an error.
+
+
+7) What is method signature? : Method signature is also called as method declaration which is defined as the structure of a method that is designed by the programmer.
+In Java programming language, the method signature consists of two parts: the method’s name and the parameter list. These two parts are part of a method declaration. 
+
+8) What is your understanding on arguments passed to methods? 
+    There are mainly two ways of passing arguments to methods:
+    • Pass by value - The method parameter values are copied to another variable and then the copied objects is passed is called pass by value
+
+    • Pass by reference. 
+An alias or reference to the actual parameter is passed to the method is called pass by reference. In java, objects are passed by use of call by reference.
+Java does not support call by reference because in call by reference we need to pass the address and address are stored in pointers and java does not support pointers because it breaks the security.
+ Inside the function, the address is used to access the actual argument used in the call. It means the changes made to the parameter affect the passed argument.
