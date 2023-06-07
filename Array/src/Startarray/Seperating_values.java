@@ -7,7 +7,7 @@ public class Seperating_values {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner sc=new Scanner(System.in); //will ask inputs from us in the output
-	    // (48,85,79,99,89)
+	    // (48,85,79,99,89). This scanner class can also be used if the array of numbers is not given
 	      int[] marks = {48,85,79,99,89}; 
 	      int i = 0;
 	      while(i<marks.length) {
